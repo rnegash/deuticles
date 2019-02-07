@@ -15,5 +15,10 @@
   },
   "permissions": [
     "storage"
-  ]
+  ],
+  "applications": {
+    "gecko": {
+      "id": "r.negash@gmail.com"
+    }
+  }
 }
