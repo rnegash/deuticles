@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Deuticles",
+  "version": "1.0",
+  "description": "tba...",
+  "content_scripts": [
+    {
+      "matches": ["*://*/"],
+      "js": ["index.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "index.html",
+    "browser_style": true
+  },
+  "permissions": [
+    "storage"
+  ]
+}

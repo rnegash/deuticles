@@ -1,0 +1,19 @@
+{
+  "name": "deuticles",
+  "version": "1.0.0",
+  "description": "Tool to memorize german nouns and their articles",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnegash/deuticles.git"
+  },
+  "author": "rnegash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rnegash/deuticles/issues"
+  },
+  "homepage": "https://github.com/rnegash/deuticles#readme"
+}
