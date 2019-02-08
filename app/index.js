@@ -1,19 +1,23 @@
 
-const getWords = browser.storage.sync.get('stuff')
+const getWords = browser.storage.sync.get('list')
 
-function saveNewWord(e) {
-  const article = "das"
-  const noun = "boot"
+function saveNewItem(item) {
 
-    browser.storage.sync.set({
-      "stuff": {
-         [article]: noun,
-      }
-    getWords.then(console.log)
-
+  getWords.then((items, err) => {
+    const article = "das"
+    const noun = "boot"
+    const list = [
+      {
+        "article": article,
+        "noun": noun,
+      },
+      ...items.list
+    ]
+    browser.storage.sync.set({ list })
+    getWords.then(items => console.log(items))
   })
 
-  e.preventDefault();
+  // e.preventDefault();
 }
-
-document.getElementById('add').addEventListener('click', saveNewWord)
+saveNewItem()
+// document.getElementById('add').addEventListener('click', saveNewWord)
