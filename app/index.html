@@ -8,11 +8,12 @@
   <body>
     <form id="noun-input">
       <label for="name">Article:</label>
-      <input type="text" id="article" name="name" required autofocus >
+      <input type="text" id="article" name="name" pattern="das|die|der" required autofocus >
       <label for="name">Noun:</label>
       <input type="text" id="noun" name="name" required>
       <br />
       <button id="add" type="submit">Add</button>
+      <button id="show-list" type="button">Show list</button>
     </form>
   </body>
 </html>

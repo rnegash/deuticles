@@ -17,6 +17,7 @@ function saveNewItem(article, noun) {
 }
 
 const addButton = document.getElementById('add')
+const displayMyNouns = document.getElementById('show-list')
 
 addButton.addEventListener(
   'click',
@@ -24,6 +25,15 @@ addButton.addEventListener(
     const article = document.getElementById('article').value
     const noun = document.getElementById('noun').value
     saveNewItem(article, noun)
+    e.preventDefault()
+  },
+  false
+)
+
+displayMyNouns.addEventListener(
+  'click',
+  (e) => {
+    browser.tabs.create({url: '/my-nouns.html'})
     e.preventDefault()
   },
   false
