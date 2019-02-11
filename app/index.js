@@ -28,3 +28,9 @@ addButton.addEventListener(
   },
   false
 )
+
+document.getElementById('noun').addEventListener("keyup", event => {
+    if(event.key !== "Enter") return; // Use `.key` instead.
+    addButton.click(); // Things you want to do.
+    event.preventDefault(); // No need to `return false;`.
+});
