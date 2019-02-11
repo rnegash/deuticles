@@ -20,7 +20,7 @@ const addButton = document.getElementById('add')
 
 addButton.addEventListener(
   'click',
-   (e) => {
+  (e) => {
     const article = document.getElementById('article').value
     const noun = document.getElementById('noun').value
     saveNewItem(article, noun)
