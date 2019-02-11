@@ -16,8 +16,6 @@ function saveNewItem(article, noun) {
   })
 }
 
-
-
 const addButton = document.getElementById('add')
 
 addButton.addEventListener(
