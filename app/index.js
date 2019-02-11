@@ -1,4 +1,4 @@
-function saveNewItem(article, noun) {
+const saveNewItem = (article, noun) => {
   const getWords = browser.storage.sync.get('list')
   const setUpdatedList = browser.storage.sync.set
 
